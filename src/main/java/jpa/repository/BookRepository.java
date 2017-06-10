@@ -18,7 +18,7 @@ public interface BookRepository extends CrudRepository<BookEntity, Integer>{
     List<BookEntity> findByNameOrAuthor(String name, String author);
 
     BookEntity findByBookDetailsIsbn(String isbn);
-
+// query method
     List<BookEntity> findByBookDetailsPriceLessThan(int price);
     List<BookEntity> findByBookDetailsPriceLessThanEqual(int price);
     List<BookEntity> findByBookDetailsPriceGreaterThanEqual(int price);
